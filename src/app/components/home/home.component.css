@@ -1,0 +1,69 @@
+#main-section{
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .fullstack{color: #fff;
+    }
+    }
+.title{
+    color: #FDFFA4;
+    font-size: 1.7em;
+    margin: 0;
+    position: relative;
+    top: 15px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.title-name{
+    font-size: 2em;
+    color: #fff;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+}
+.main-btn{
+    background-color: #3652e3;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 6px 13px;
+}
+.typescript-icon{
+    width: 25px;
+    height: auto;  
+     margin: 0 3px;
+}
+.icon-node{
+    color: green;
+    margin: 0 10px;   
+    margin: 0 3px;
+}
+.icon-ce{
+    color: #007ACC;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+}
+.icon-angular{
+    color: #DD0031;
+    margin: 0 10px;  
+     margin: 0 3px;
+}
+#main-icons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

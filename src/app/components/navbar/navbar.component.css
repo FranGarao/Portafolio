@@ -1,0 +1,122 @@
+#nav{
+    max-width: 1200px;
+    height: 70px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    .info{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+    }
+    #logo{
+        background-color: aliceblue;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+    .nav-title{
+        align-items: center;
+        width: 50%;
+        .nav-name{
+            margin: 0;
+        }
+        .nav-dev{
+            margin: 0;
+        }
+    }
+
+    .nav-list{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        .nav-list-item{
+            cursor: pointer;
+        }
+}
+#open {
+    z-index: 2;
+    position: relative;
+}
+    /* CSS 2  */
+
+.visible {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    background-color: #343434;
+    width: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 500px;
+    transform: translateY(0%);
+    animation: showNavbar 0.6s ease-in-out;
+    -webkit-animation: showNavbar 0.6s ease-in-out;
+    z-index: 2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+} 
+.visible-btn {
+    background-color: #343434;
+    width: 1000px;
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+} 
+.invisible {
+    opacity: 0;
+    animation: hiddenNavbar 0.6s ease-in-out;
+    -webkit-animation: hiddenNavbar 0.6s ease-in-out;
+    display: none;
+} 
+}
+
+
+@keyframes showNavbar {
+    0%{
+        opacity: 0;
+        transform: translateY(-80%);
+        -webkit-transform: translateY(-80%);
+        -moz-transform: translateY(-80%);
+        -ms-transform: translateY(-80%);
+        -o-transform: translateY(-80%);
+}
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes hiddenNavbar {
+    0%{
+        opacity: 1;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+}
+    100%{
+        opacity: 0;
+        transform: translateY(-80%);
+        -webkit-transform: translateY(-80%);
+        -moz-transform: translateY(-80%);
+        -ms-transform: translateY(-80%);
+        -o-transform: translateY(-80%);
+}
+}

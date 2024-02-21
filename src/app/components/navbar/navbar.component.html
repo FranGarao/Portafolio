@@ -1,0 +1,19 @@
+<nav id="nav">
+    <div class="info">
+        <p id="logo">img</p>
+        <div class="nav-title">
+            <p class="nav-name">Francisco Garao</p>
+            <p class="nav-dev">Software Developer</p>
+        </div>
+    </div>
+    <button [ngClass]="{'invisible': navVisibility}" (click)="open()" mat-button>Abrir</button>
+    <ul #navList class="nav-list" [ngClass]="{'visible': navVisibility, 'invisible': !navVisibility}">
+        <button (click)="open()">X</button>
+        <li class="nav-list-item">Inicio</li>
+        <li class="nav-list-item">Experiencia</li>
+        <li class="nav-list-item">Sobre Mi</li>
+        <li class="nav-list-item">Proyectos</li>
+        <li class="nav-list-item">Skills</li>
+        <li class="nav-list-item">Contacto</li>
+    </ul>
+</nav>
